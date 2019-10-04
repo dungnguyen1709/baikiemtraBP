@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<script>
+    var n = parseInt(prompt('nhap so'));
+    var a = true;
+    var i;
+    if (n < 2) {
+    a = false;
+    }else {
+        if (n % 2 ==0 ){
+            a = false
+        }else {
+            for (i = 3 ; i < n ; i += 2){
+                a = false;
+                break;
+            }
+        }
+    }
+    if (a){
+        alert("la so nguyen to");
+    }else {
+        alert("khong phai la so nguyen to");
+    }
+</script>
+</body>
+</html>
